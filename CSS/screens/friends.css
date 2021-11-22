@@ -1,0 +1,75 @@
+#friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: rgb(238, 231, 247);
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  padding: 15px 0px;
+  top: 100px;
+}
+
+#friends-display-link i {
+  color: gray;
+  opacity: 0.4;
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+  height: 150vh;
+}
+
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+  border-color: var(--purple);
+}
+
+.friends-screen__channel-header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component-fr {
+  border-bottom: var(--main-border);
+  border-color: var(--purple);
+  padding-bottom: 10px;
+}
+
+.user-component-fr:last-child {
+  border-bottom: none;
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacitiy: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background: linear-gradient(to top, rgb(203, 176, 253), white);
+  position: absolute;
+  height: 180vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 2s;
+  z-index: 3;
+}
+
+#splash-screen > img {
+  width: 30%;
+  position: absolute;
+  top: 300px;
+}

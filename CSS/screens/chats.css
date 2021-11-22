@@ -1,0 +1,12 @@
+.user-component_chat2,
+.user-component_chat3 {
+  padding-top: 0;
+  margin-top: 30px;
+}
+
+.user-component_chat1,
+.user-component_chat2 {
+  border-bottom: var(--main-border);
+  border-color: var(--purple);
+  padding-bottom: 10px;
+}
